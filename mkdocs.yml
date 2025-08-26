@@ -2,7 +2,7 @@ site_name: Template de Entrega
 site_author: Sandmann, H.
 site_url: https://Assyss.github.io/Machine-Learning
 repo_url: https://github.com/Assyss/Machine-Learning
-repo_name: github/documentation.template
+repo_name: github.com/Assyss/Machine-Learning.git
 
 theme:
   name: material
