@@ -1,7 +1,7 @@
 site_name: Template de Entrega
 site_author: Sandmann, H.
-site_url: https://Assyss.github.io/documentation.template
-repo_url: https://github.com/Assyss/documentation.template
+site_url: https://Assyss.github.io/Machine-Learning
+repo_url: https://github.com/Assyss/Machine-Learning
 repo_name: github/documentation.template
 
 theme:
@@ -110,7 +110,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - git-committers:
-      repository: hsandmann/hsandmann.github.com
+      repository: Assyss/Machine-Learning
       branch: main
   - search
   - badges
@@ -133,6 +133,7 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Decision Tree: ./decision-tree/main.md
   - This documentation: ./thisdocumentation/main.md
   - Roteiros:
     - Roteiro 1: ./roteiro1/main.md
