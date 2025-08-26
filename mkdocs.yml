@@ -1,5 +1,5 @@
-site_name: Template de Entrega
-site_author: Sandmann, H.
+site_name: Machine Learning
+site_author: Bruno Assis.
 site_url: https://Assyss.github.io/Machine-Learning
 repo_url: https://github.com/Assyss/Machine-Learning
 repo_name: github.com/Assyss/Machine-Learning.git
@@ -134,4 +134,4 @@ extra_javascript:
 nav:
   - Home: index.md
   - Decision Tree: ./decision-tree/main.md
-  - Projeto: ./projeto/main.md 
+  - Projeto: ./projeto/main.md
