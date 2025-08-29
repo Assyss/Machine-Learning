@@ -22,4 +22,3 @@ Cada projeto documentado aqui representa um estudo de caso completo, desde a exp
 </div>
 
 ---
-*Futuramente, você pode adicionar novos cartões para novos projetos aqui!*
