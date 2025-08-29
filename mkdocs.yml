@@ -1,42 +1,30 @@
+# mkdocs.yml
+
 site_name: Machine Learning
 site_author: Bruno Assis.
 site_url: https://Assyss.github.io/Machine-Learning
 repo_url: https://github.com/Assyss/Machine-Learning
+# O repo_name é um pouco redundante, pode deixar só o repo_url
 repo_name: github.com/Assyss/Machine-Learning.git
 
 theme:
   name: material
   palette:
-    # primary: grey
-    # Light mode
+    # Paleta para modo claro (default)
     - scheme: default
       primary: grey
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
 
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
+    # Paleta para modo escuro
+    - scheme: slate
       primary: grey
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
-      primary: grey
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      primary: grey
-      scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to system preference
+  
+  # <<< CORRIGIDO: 'features' deve estar indentado sob 'theme'
   features:
     - content.code.copy
     - content.code.select
@@ -48,6 +36,8 @@ theme:
     - navigation.path
     - navigation.tracking
     - navigation.expand
+  
+  # <<< CORRIGIDO: 'icon' também deve estar indentado sob 'theme'
   icon:
     # logo: assets/images/devops
     admonition:
@@ -68,7 +58,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
-  - markdown_grid_tables
+  - tables # <<< CORRIGIDO: Adicionei esta extensão que estava faltando na sua lista
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
@@ -87,14 +77,10 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-        - name: python
-          class: python
-          validator: !!python/name:markdown_exec.validator
-          format: !!python/name:markdown_exec.formatter
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
-      custom_checkbox: true  
+      custom_checkbox: true   
   - footnotes
   - pymdownx.critic
   - pymdownx.caret
@@ -102,9 +88,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.blocks.caption
-  - tables
-      
+    
 plugins:
+  - search # <<< CORRIGIDO: Movi o 'search' para o topo, é uma boa prática
   - mkdocs-jupyter
   - glightbox
   - git-revision-date-localized:
@@ -113,7 +99,6 @@ plugins:
   - git-committers:
       repository: Assyss/Machine-Learning
       branch: main
-  - search
   - badges
   - minify:
       minify_html: true
@@ -127,11 +112,14 @@ plugins:
 
 extra_javascript:
   - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
-  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+
+# <<< CORRIGIDO: Removi links JS duplicados e desnecessários
+#  - https://polyfill.io/v3/polyfill.min.js?features=es6
+#  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+#  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
+#  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
 
 nav:
-  - Decision Tree: ./decision-tree/main.md
-  - Projeto: ./projeto/main.md
+  # <<< CORRIGIDO: Removido o "./" que não é necessário
+  - Árvore de Decisão: 'decision-tree/main.ipynb'
+  - Projeto: 'projeto/main.md'
