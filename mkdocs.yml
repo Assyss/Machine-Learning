@@ -4,7 +4,6 @@ site_name: Machine Learning
 site_author: Bruno Assis.
 site_url: https://Assyss.github.io/Machine-Learning
 repo_url: https://github.com/Assyss/Machine-Learning
-# O repo_name é um pouco redundante, pode deixar só o repo_url
 repo_name: github.com/Assyss/Machine-Learning.git
 
 theme:
@@ -24,7 +23,6 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   
-  # <<< CORRIGIDO: 'features' deve estar indentado sob 'theme'
   features:
     - content.code.copy
     - content.code.select
@@ -37,7 +35,7 @@ theme:
     - navigation.tracking
     - navigation.expand
   
-  # <<< CORRIGIDO: 'icon' também deve estar indentado sob 'theme'
+  
   icon:
     # logo: assets/images/devops
     admonition:
@@ -58,7 +56,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
-  - tables # <<< CORRIGIDO: Adicionei esta extensão que estava faltando na sua lista
+  - tables # Adicionei esta extensão que estava faltando na lista
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
@@ -90,7 +88,7 @@ markdown_extensions:
   - pymdownx.blocks.caption
     
 plugins:
-  - search # <<< CORRIGIDO: Movi o 'search' para o topo, é uma boa prática
+  - search
   - mkdocs-jupyter
   - glightbox
   - git-revision-date-localized:
@@ -113,13 +111,16 @@ plugins:
 extra_javascript:
   - https://unpkg.com/mathjax/es5/tex-mml-chtml.js
 
-# <<< CORRIGIDO: Removi links JS duplicados e desnecessários
-#  - https://polyfill.io/v3/polyfill.min.js?features=es6
-#  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-#  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
-#  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
+
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://fastly.jsdelivr.net/npm/jquery/dist/jquery.min.js
+  - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
 
 nav:
-  # <<< CORRIGIDO: Removido o "./" que não é necessário
-  - Árvore de Decisão: 'decision-tree/main.ipynb'
+  - Árvore de Decisão: 'decision-tree/main.md'
   - Projeto: 'projeto/main.md'
+
+# Adiciona folhas de estilo personalizadas
+extra_css:
+  - assets/css/custom.css

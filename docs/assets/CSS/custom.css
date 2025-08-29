@@ -1,0 +1,24 @@
+/* Centraliza a tabela do Pandas (versão corrigida e mais específica) */
+div.dataframe > table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+/* Centraliza outras tabelas Markdown (como a do Relatório de Classificação) */
+.md-typeset table:not([class]) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adiciona espaçamento (padding) nas células das tabelas do Pandas */
+.dataframe th, .dataframe td {
+  padding: 8px 15px;
+  text-align: left;
+}
+
+/* Adiciona o mesmo espaçamento nas células das tabelas Markdown */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: 8px 15px;
+}
+
