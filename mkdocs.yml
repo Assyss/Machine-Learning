@@ -105,7 +105,7 @@ markdown_extensions:
   - tables
       
 plugins:
-  - jupyter
+  - mkdocs-jupyter
   - glightbox
   - git-revision-date-localized:
       enable_creation_date: true
@@ -133,6 +133,5 @@ extra_javascript:
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
 
 nav:
-  - Home: index.md
   - Decision Tree: ./decision-tree/main.md
   - Projeto: ./projeto/main.md
