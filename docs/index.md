@@ -1,1 +1,5 @@
-<meta http-equiv="refresh" content="0; url=./projeto/main/" />
+# Machine Learning
+
+| Versions |
+|--------|
+| [2025.2](./index.md) |
