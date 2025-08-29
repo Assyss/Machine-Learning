@@ -7,7 +7,7 @@ Bem-vindo ao meu portfólio de projetos de Ciência de Dados e Machine Learning.
 
 Cada projeto documentado aqui representa um estudo de caso completo, desde a exploração inicial dos dados até a apresentação dos resultados finais. Sinta-se à vontade para explorar.
 
-## Projetos disponíveis:
+## Projetos disponíveis
 
 <div class="grid cards" markdown>
 
