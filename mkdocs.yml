@@ -118,6 +118,7 @@ extra_javascript:
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
 
 nav:
+  - Início: 'index.md'
   - Árvore de Decisão: 'decision-tree/main.md'
   - Projeto: 'projeto/main.md'
 
