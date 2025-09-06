@@ -1,24 +1,40 @@
-# Portfólio de projetos de Machine Learning
+# Projetos
 *Por Bruno Assis*
 
 ---
 
-Bem-vindo ao meu portfólio de projetos de Ciência de Dados e Machine Learning. Este espaço serve como uma demonstração prática das minhas habilidades na análise, pré-processamento, modelagem e avaliação de dados.
+Este portfólio apresenta uma coleção de projetos onde aplico competências em Machine Learning, análise de dados e engenharia de dados para resolver desafios complexos. Cada projeto detalha uma abordagem end-to-end: desde a coleta e o pré-processamento dos dados até a implementação de modelos e a extração de insights acionáveis.
 
-Cada projeto documentado aqui representa um estudo de caso completo, desde a exploração inicial dos dados até a apresentação dos resultados finais. Sinta-se à vontade para explorar.
+Convido você a navegar pelos estudos de caso para examinar minha proficiência em transformar dados em soluções, utilizando as tecnologias e ferramentas destacadas nos ícones abaixo.
+
+## Tecnologias
+
+<div align="center">
+  :fontawesome-brands-python:
+  &nbsp;
+  :fontawesome-brands-square-js:
+  &nbsp;
+  :fas-database:
+  &nbsp;
+  :fontawesome-brands-git-alt:
+  &nbsp;
+  :fontawesome-brands-docker:
+  &nbsp;
+
+  </div>
+
+---
 
 ## Projetos disponíveis
 
 <div class="grid cards" markdown>
 
--   __Classificação de flores iris__
+-   __Classificação de flores iris__
 
-    ---
+    ---
 
-    Um estudo de caso clássico utilizando o algoritmo de **Árvore de Decisão** para classificar espécies de flores. Inclui a análise exploratória em notebook Jupyter e o relatório técnico completo do processo.
+    Um estudo de caso clássico utilizando o algoritmo de **Árvore de Decisão** para classificar espécies de flores. Inclui a análise exploratória em notebook Jupyter e o relatório técnico completo do processo.
 
-    [:octicons-arrow-right-24: Ver Projeto](projeto/main.md)
+    [:octicons-arrow-right-24: Ver Projeto](projeto/main.md)
 
 </div>
-
----
