@@ -1,29 +1,8 @@
 # Projetos
 *Por Bruno Assis*
 
----
-
 Este portfólio apresenta uma coleção de projetos onde aplico competências em Machine Learning, análise de dados e engenharia de dados para resolver desafios complexos. Cada projeto detalha uma abordagem end-to-end: desde a coleta e o pré-processamento dos dados até a implementação de modelos e a extração de insights acionáveis.
 
-Convido você a navegar pelos estudos de caso para examinar minha proficiência em transformar dados em soluções, utilizando as tecnologias e ferramentas destacadas nos ícones abaixo.
-
-## Tecnologias
-
-<div align="center">
-  :fontawesome-brands-python:
-  &nbsp;
-  :fontawesome-brands-square-js:
-  &nbsp;
-  :fas-database:
-  &nbsp;
-  :fontawesome-brands-git-alt:
-  &nbsp;
-  :fontawesome-brands-docker:
-  &nbsp;
-
-  </div>
-
----
 
 ## Projetos disponíveis
 
@@ -31,7 +10,7 @@ Convido você a navegar pelos estudos de caso para examinar minha proficiência 
 
 -   __Classificação de flores iris__
 
-    ---
+
 
     Um estudo de caso clássico utilizando o algoritmo de **Árvore de Decisão** para classificar espécies de flores. Inclui a análise exploratória em notebook Jupyter e o relatório técnico completo do processo.
 
