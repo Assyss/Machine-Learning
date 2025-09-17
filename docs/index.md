@@ -12,7 +12,21 @@ Este portfólio apresenta uma coleção de projetos onde aplico competências em
 
 <div class="grid cards" markdown>
 
--   __Classificação de flores iris__    
+-   __Classificação de solo por satélite__
+
+    ---
+
+    Um projeto de classificação para determinar o tipo de solo a partir de dados multiespectrais de satélite, utilizando o algoritmo **K-Nearest Neighbors (KNN)**. O processo inclui pré-processamento, padronização de features e avaliação de performance.
+
+    [:octicons-arrow-right-24: Ver Projeto](projeto/knn.md)
+
+</div>
+
+<div class="grid cards" markdown>
+
+-   __Classificação de flores iris__
+
+    ---
     
     Um estudo de caso clássico utilizando o algoritmo de **Árvore de Decisão**
     para classificar espécies de flores. Inclui a análise exploratória em notebook

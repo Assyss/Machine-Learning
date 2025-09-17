@@ -119,9 +119,10 @@ extra_javascript:
   - https://fastly.jsdelivr.net/npm/echarts/dist/echarts.min.js
 
 nav:
-  - Início: 'index.md'
-  - Árvore de Decisão: 'decision-tree/main.md'
-  - Relatório do Projeto: 'projeto/main.md'
+  - 'Início': 'index.md'
+  - 'Modelos de ML':
+      - 'Árvore de Decisão': 'decision-tree/main.md'
+      - 'KNN': 'KNN/main.md'
 
 # Adiciona folhas de estilo personalizadas
 extra_css:
