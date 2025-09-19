@@ -123,6 +123,7 @@ nav:
   - 'Modelos de ML':
       - 'Árvore de Decisão': 'decision-tree/main.md'
       - 'KNN': 'KNN/main.md'
+      - 'K-MEANS': 'K-MEANS/main.md'
 
 # Adiciona folhas de estilo personalizadas
 extra_css:
