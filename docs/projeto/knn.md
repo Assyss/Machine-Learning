@@ -1,6 +1,10 @@
 # Projeto de Classificação com K-Nearest Neighbors: Tipos de Solo por Satélite
 **Autor:** Bruno Assis
 
+**Data:** 17 de setembro de 2025
+
+**Projeto:** Classificação com K-Nearest Neighbors
+
 ### Introdução
 Este projeto tem como objetivo desenvolver um modelo de Machine Learning capaz de classificar tipos de solo com base em dados de observações de satélite. Para esta tarefa, foi utilizado o algoritmo **K-Nearest Neighbors (KNN)**, um modelo de aprendizado supervisionado baseado em instância, que classifica um novo dado com base na classe de seus "vizinhos" mais próximos no espaço de características.
 

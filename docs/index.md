@@ -12,6 +12,18 @@ Este portfólio apresenta uma coleção de projetos onde aplico competências em
 
 <div class="grid cards" markdown>
 
+-   __Clusterização de Dados com K-Means__
+
+    ---
+    
+    Um projeto de aprendizado **não supervisionado** utilizando o algoritmo **K-Means** para identificar grupos (clusters) naturais em um conjunto de dados. A análise inclui a determinação do número ideal de clusters através do **Método do Cotovelo** e a avaliação da qualidade do agrupamento.
+
+    [:octicons-arrow-right-24: Ver Projeto](projeto/kmeans.md)
+
+</div>
+
+<div class="grid cards" markdown>
+
 -   __Classificação de solo por satélite__
 
     ---
