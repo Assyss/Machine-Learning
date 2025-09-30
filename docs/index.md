@@ -24,6 +24,14 @@ Este portfólio apresenta uma coleção de projetos onde aplico competências em
 
 <div class="grid cards" markdown>
 
+-   __Classificação de Qualidade de Vinhos__
+
+    ---
+
+    Um projeto completo de classificação para prever a qualidade de vinhos com base em suas características físico-químicas. O estudo compara o desempenho de três algoritmos distintos: **Árvore de Decisão**, **KNN** e o método não supervisionado **K-Means**.
+
+    [:octicons-arrow-right-24: Ver Projeto](Projeto_I/relatorio_final.md)
+
 -   __Classificação de solo por satélite__
 
     ---
