@@ -27,8 +27,8 @@ Este portfólio apresenta uma coleção de projetos onde aplico competências em
 -   __Comparação de Métricas: KNN vs. K-Means__
 
     ---
-
-    Uma análise comparativa entre um algoritmo supervisionado (**KNN**) e um não supervisionado (**K-Means**) na tarefa de classificação do dataset Iris. O projeto foca na geração e interpretação de métricas de avaliação, incluindo matriz de confusão, acurácia e precisão.
+    
+    Uma análise comparativa entre um algoritmo supervisionado (**KNN**) e um não supervisionado (**K-Means**) na tarefa de classificação do dataset Iris. O projeto foca na geração e interpretação de métricas de avaliação.
 
     [:octicons-arrow-right-24: Ver Projeto](Metricas/analise_metrica.md)
 
