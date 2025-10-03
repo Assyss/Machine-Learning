@@ -124,6 +124,7 @@ nav:
       - 'Árvore de Decisão': 'decision-tree/main.md'
       - 'KNN': 'KNN/main.md'
       - 'K-MEANS': 'K-MEANS/main.md'
+      - 'Exercício - Métricas': 'exercicio-metricas/relatorio_exercicio.md'
       - 'Projeto I - Classificação de Vinhos': 'Projeto_I/relatorio_final.md'
 
 # Adiciona folhas de estilo personalizadas
