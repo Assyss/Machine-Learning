@@ -121,7 +121,7 @@ extra_javascript:
 nav:
   - 'Início': 'index.md'
   - 'Modelos de ML':
-      - Projeto - Random Forest: 'projeto-random-forest/relatorio_rf_satelite.md'
+      - Projeto - Random Forest: 'Random-forest/relatorio_rf_satelite.md'
       - 'Árvore de Decisão': 'decision-tree/main.md'
       - 'KNN': 'KNN/main.md'
       - 'K-MEANS': 'K-MEANS/main.md'
