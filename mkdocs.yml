@@ -64,7 +64,7 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.snippets:
@@ -77,7 +77,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
-      custom_checkbox: true  
+      custom_checkbox: true
   - footnotes
   - pymdownx.critic
   - pymdownx.caret
@@ -121,12 +121,12 @@ extra_javascript:
 nav:
   - 'Início': 'index.md'
   - 'Modelos de ML':
-      - Projeto - Random Forest: 'Random-forest/relatorio_rf_satelite.md'
       - 'Árvore de Decisão': 'decision-tree/main.md'
       - 'KNN': 'KNN/main.md'
       - 'K-MEANS': 'K-MEANS/main.md'
       - 'Exercício - Métricas': 'Metricas/analise_metrica.md'
       - 'Projeto I - Classificação de Vinhos': 'Projeto_I/relatorio_final.md'
+      - 'Random Forest': 'Random-Forest/rf_satelite.md'
 
 # Adiciona folhas de estilo personalizadas
 extra_css:
