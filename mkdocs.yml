@@ -121,12 +121,14 @@ extra_javascript:
 nav:
   - 'Início': 'index.md'
   - 'Modelos de ML':
+      # Exemplo: Cole a linha que você tem
+      - Projeto - PageRank: 'PAGERANK/main.md'
+      - 'Random Forest': 'Random-Forest/RF_satelite.md'
       - 'Árvore de Decisão': 'decision-tree/main.md'
       - 'KNN': 'KNN/main.md'
       - 'K-MEANS': 'K-MEANS/main.md'
       - 'Exercício - Métricas': 'Metricas/analise_metrica.md'
       - 'Projeto I - Classificação de Vinhos': 'Projeto_I/relatorio_final.md'
-      - 'Random Forest': 'Random-Forest/rf_satelite.md'
 
 # Adiciona folhas de estilo personalizadas
 extra_css:
