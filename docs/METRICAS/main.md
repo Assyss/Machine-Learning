@@ -2,7 +2,7 @@
 
 **Autor:** Bruno Assis
 
-**Exercício:** Random Forest
+**Exercício:** Métricas
 
 ---
 
