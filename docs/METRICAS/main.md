@@ -1,49 +1,51 @@
-# Relatório de Projeto: Classificação de Solo por Satélite com Random Forest
+# Exercício: Análise de Métricas (Classificação e Clusterização)
 
-**Autor:** Bruno Assis
-
-**Exercício:** Métricas
+**Dataset:** Iris Plants Database
+**Objetivo:** Comparar o desempenho de algoritmos supervisionados (KNN) e não supervisionados (K-Means) na tarefa de classificação de espécies de flores.
 
 ---
 
 ## 1. Exploração dos Dados
 
-O conjunto de dados utilizado foi o **"Statlog (Landsat Satellite)"**, com 36 características multiespectrais. O objetivo é a classificação de 6 tipos de cobertura do solo.
+O dataset Iris contém 150 amostras de flores divididas em 3 espécies (Setosa, Versicolor e Virginica). A análise visual abaixo mostra que uma das classes é linearmente separável, enquanto as outras duas possuem uma leve sobreposição.
 
-- **Natureza dos Dados:** Dados numéricos limpos (sem valores ausentes).
-
-![Distribuição das Classes de Cobertura do Solo](outputs/1_distribuicao_classes.png)
-*Figura 1: Distribuição das classes de cobertura do solo no dataset.*
+![Pairplot das Variáveis](main_files/1_pairplot.png)
+*Figura 1: Relação entre as características das flores (pétalas e sépalas).*
 
 ---
-## 2. Pré-processamento e Divisão dos Dados
 
-### Pré-processamento
-1. **Limpeza:** O dataset é limpo.
-2. **Normalização:** Foi aplicado o `StandardScaler` para padronizar as features, garantindo que o modelo Random Forest trabalhe com dados em escala uniforme.
+## 2. Metodologia
 
-### Divisão dos Dados
-O conjunto de dados foi dividido em **80% para Treino** e **20% para Teste**, usando estratificação para garantir a representatividade das classes em ambos os conjuntos.
+Foram aplicados dois paradigmas diferentes de Machine Learning:
 
----
-## 3. Treinamento e Avaliação do Modelo
-
-### Treinamento (Random Forest)
-O **Random Forest Classifier** (com 100 árvores) foi escolhido por ser um algoritmo de ensemble poderoso, adequado para datasets com muitas features.
-
-### Avaliação (Etapa 5)
-O modelo alcançou uma alta acurácia de aproximadamente **92%** no conjunto de teste. A Matriz de Confusão (Figura 2) detalha os acertos, mostrando que a classificação é altamente eficaz, com pouca confusão entre as classes.
-
-![Matriz de Confusão](outputs/2_matriz_confusao.png)
-*Figura 2: Matriz de Confusão do desempenho no conjunto de teste.*
-
-### Análise de Importância de Features
-A análise (Figura 3) é crucial: ela revelou que **as características centrais (pixels no centro da amostra)** são as mais importantes para a classificação, indicando que o modelo prioriza a área de foco para tomar a decisão sobre o tipo de solo.
-
-![Importância das Features](outputs/3_importancia_features.png)
-*Figura 3: Importância de cada feature para o modelo Random Forest.*
+1.  **KNN (K-Nearest Neighbors):** Um algoritmo **supervisionado**. Ele "aprende" com os rótulos de treino e classifica novas amostras baseada na proximidade com vizinhos conhecidos.
+2.  **K-Means:** Um algoritmo **não supervisionado**. Ele não recebe os rótulos originais. Ele tenta agrupar os dados em 3 clusters baseados apenas na geometria dos dados. Depois, mapeamos esses clusters para as classes reais para avaliar a precisão.
 
 ---
-## 4. Relatório Final e Conclusão
 
-O projeto demonstrou a eficácia do Random Forest na classificação multiespectral, atingindo uma performance notável. O ponto mais importante é a **capacidade de analisar a importância das features**, que direciona futuros trabalhos de otimização e seleção de variáveis.
+## 3. Avaliação e Comparação
+
+### 3.1 Desempenho do KNN
+O KNN obteve um desempenho quase perfeito, o que é esperado para este dataset clássico quando os rótulos são conhecidos.
+
+![Matriz de Confusão KNN](main_files/2_confusao_knn.png)
+*Figura 2: Matriz de confusão do KNN.*
+
+### 3.2 Desempenho do K-Means
+Surpreendentemente, o K-Means (mesmo sem saber o que é uma "Setosa") conseguiu agrupar as flores com altíssima precisão, errando pouquíssimas amostras na fronteira entre Versicolor e Virginica.
+
+![Matriz de Confusão K-Means](main_files/3_confusao_kmeans.png)
+*Figura 3: Matriz de confusão do K-Means após mapeamento dos clusters.*
+
+### 3.3 Tabela Comparativa
+
+| Modelo | Tipo | Acurácia | Observação |
+| :--- | :--- | :--- | :--- |
+| **KNN** | Supervisionado | **~97.7%** | Ideal quando temos dados rotulados. |
+| **K-Means** | Clusterização | **~89.3%** | Excelente para descobrir padrões sem rótulos prévios. |
+
+---
+
+## 4. Conclusão
+
+O experimento demonstrou que as características físicas das flores Iris são tão distintas que até mesmo um algoritmo que não conhece as espécies (K-Means) consegue separá-las quase tão bem quanto um classificador treinado (KNN).
