@@ -126,7 +126,7 @@ nav:
       - Árvore de Decisão: 'decision-tree/main.md'
       - KNN: 'KNN/main.md'
       - K-MEANS: 'K-MEANS/main.md'
-      - Exercício - Métricas: 'METRICAS/main.md'
+      - Métricas: 'METRICAS/main.md'
       - Projeto I - Classificação de Vinhos: 'Projeto_I/relatorio_final.md'
       - Project II - Regressão: 'PROJETO_REGRESSAO/main.md'
 
